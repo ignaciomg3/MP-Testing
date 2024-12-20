@@ -13,7 +13,8 @@ chrome_options.add_argument("--start-maximized")
 
 ruta = "C:/Users/admin/Desktop/chromedriver/chromedriver.exe"
 driver =  webdriver.Chrome(service= Service(ruta))
-driver.get("https://morpheuscapital.com.ar/login")
+#driver.get("https://morpheuscapital.com.ar/login")
+driver.get("http://localhost:3000/login")
 
 
 # Esperar a que un elemento específico esté presente en la página
@@ -31,7 +32,7 @@ except Exception as e:
 email_input = driver.find_element(By.NAME, "loginEmail")
 
 # Rellenar el campo de entrada con el correo electrónico
-email_input.send_keys("mavibarra1203@gmail.com")
+email_input.send_keys("ignacioandres_mongi@epam.com")
 
 # Esperar 2 segundos antes de continuar
 time.sleep(2)
@@ -40,7 +41,7 @@ time.sleep(2)
 password_input = driver.find_element(By.NAME, "password")
 
 # Rellenar el campo de entrada con la contraseña
-password_input.send_keys("Morpheus123!")
+password_input.send_keys("test1234")
 
 # Esperar 2 segundos antes de continuar
 time.sleep(2)
