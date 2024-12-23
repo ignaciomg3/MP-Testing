@@ -2,7 +2,7 @@ from selenium.webdriver.common.by import By
 
 class LoginPage:
     def __init__(self, driver):
-        """Inicializa el driver y los selectores de la página."""
+        """Inicializa el drivers y los selectores de la página."""
         self.driver = driver
         self.url = "http://localhost:3000/login"  # URL del login
         self.username_input = (By.NAME, "loginEmail")

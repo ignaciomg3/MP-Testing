@@ -13,7 +13,7 @@ chrome_options.add_argument("--start-maximized")
 
 ruta = "C:/Users/admin/Desktop/chromedriver/chromedriver.exe"
 driver =  webdriver.Chrome(service= Service(ruta))
-#driver.get("https://morpheuscapital.com.ar/login")
+#drivers.get("https://morpheuscapital.com.ar/login")
 driver.get("http://localhost:3000/login")
 
 
